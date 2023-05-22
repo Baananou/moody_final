@@ -14,6 +14,7 @@ class _SignupScreenState extends State<SignupScreen> {
   final _confirmpasswordController = TextEditingController();
 
   Future signUp() async {
+    
     if (passwordConfirmed()) {
       try {
         await FirebaseAuth.instance.createUserWithEmailAndPassword(
